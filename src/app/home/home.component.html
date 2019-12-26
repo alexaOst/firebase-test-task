@@ -1,0 +1,8 @@
+<mat-card class="home" class="example-card">
+    <mat-card-header>
+        <mat-card-title *ngIf="authenticationService.userData | async">Hello {{ (authenticationService.userData | async)?.email }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions>
+        <button mat-button *ngIf="authenticationService.userData | async" (click)="signOut()">Logout</button>
+    </mat-card-actions>
+</mat-card>

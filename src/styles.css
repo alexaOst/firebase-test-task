@@ -1,0 +1,13 @@
+.example-card {
+    max-width: 400px;
+    margin: 15% auto;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-card-header-text {
+    margin: 0!important;
+}
